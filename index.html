@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <style>
+       
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+.id-card {
+    width: 40%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(50, 73, 55, 0.1);
+}
+
+.header {
+    background-color: #333;
+    color: #c81414;
+    padding: 10px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.photo {
+    width: 30%; 
+    margin: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details {
+    width: 60%; 
+    margin: 10px;
+}
+
+.details h3 {
+    margin-top: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+.id-card >.header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.info >.photo +.details {
+    margin-left: 20px;
+}
+
+@media (max-width: 78px) {
+   .id-card {
+        width: 90%; 
+    }
+   .info {
+        flex-direction: column;
+    }
+   .photo {
+        width: 50%; 
+    }
+   .details {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+   .id-card {
+        width: 100%; 
+    }
+   .photo {
+        width: 100%; 
+    }
+}
+        </style>
+    </style>
+</head>
+<body>
+    <div class="id-card">
+        <div class="header">
+            <h2>ID Card</h2>
+        </div>
+        <div class="info">
+            <div class="photo">
+                <img src="https://media.licdn.com/dms/image/D5635AQGJtsLHTFsqUg/profile-framedphoto-shrink_400_400/0/1679565433329?e=1720530000&v=beta&t=Zjro2bviP21SJC1HCnMEHVAUTMHB4fwJZ5I1gbNNUUI" alt="Photo">
+            </div>
+            <div class="details">
+                <h3>Name:</h3> Eswarrao
+                <h3>DOB:</h3><p>11-09-2000</p>
+                <h3>ID Number:</h3><p> 123456789</p>
+                <h3>Department:</h3><p> Computer Science</p>
+                <h3>University:</h3><p> JNTU University</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
